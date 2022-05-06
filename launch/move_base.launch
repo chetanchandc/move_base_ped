@@ -1,0 +1,14 @@
+<launch>
+
+   <arg name="model" default="$(find move_base_ped)/urdf/robot_world_laser.xacro" />
+
+  <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+    <rosparam file="$(find move_base_ped)/param/costmap_common_params.yaml" command="load" ns="global_costmap"/>
+    <rosparam file="$(find move_base_ped)/param/costmap_common_params.yaml" command="load" ns="local_costmap"/>
+    <rosparam file="$(find move_base_ped)/param/local_costmap_params.yaml" command="load"/>
+    <rosparam file="$(find move_base_ped)/param/global_costmap_params.yaml" command="load"/>
+    <rosparam file="$(find move_base_ped)/param/base_local_planner_params.yaml" command="load"/>
+    <rosparam file="$(find move_base_ped)/param/move_base_params.yaml" command="load"/>
+  </node>
+
+</launch>
