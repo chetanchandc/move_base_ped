@@ -17,13 +17,9 @@
   </include>
 
   <!-- Start Rviz -->  
-  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find urdf_tutorial)/urdf.rviz" />
-   
-    <!-- <node name="rviz" pkg="rviz" type="rviz" args="-d $(find final_assignment)/config/sim.rviz" />
-   <include file="$(find human_aware_nav_launch)/launch/rviz.launch" />-->
+   <node name="rviz" pkg="rviz" type="rviz" args="-d $(find move_base_ped)/rviz/nav.rviz" />
 
  <!-- state transform publisher 
-  
     <node pkg="tf" type="static_transform_publisher" name="broadcaster" args="0 0 0 0 0 0 1 link_chassis base_footprint 100" /> -->
 
 </launch>
