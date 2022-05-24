@@ -1,5 +1,7 @@
 # move_base_ped
 
+Note : This package is a one of the branch of my thesis. I will update once i upload the thesis.
+
 Usage :
 
 To clone the project
